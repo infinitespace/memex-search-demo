@@ -89,11 +89,7 @@
                         <!-- provenance hyperlink -->
                         <p>
                             <!-- TODO routing param -->
-                            <a ng-href="#/view/{{hit._index | urlEncode
-                                    }}/{{hit._type | urlEncode
-                                    }}?{{hit.parent ? 'parent=' + (hit.parent._id | urlEncode) + '&' : ''
-                                    }}id={{hit._id | urlEncode
-                                    }}"
+                            <a ng-href="{{hit._id}}"
                                class="text-muted">{{hit._id}}</a>
                         </p>
 
